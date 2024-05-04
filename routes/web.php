@@ -37,4 +37,8 @@ Route::middleware(['auth'])->group(function () {
  Route::post('/tambah-mahasiswa', [MahasiswaController::class, 'store'])->name('store');
  Route::post('/edit-mahasiswa/{id}', [MahasiswaController::class, 'update'])->name('update');
  Route::post('/delete-mahasiswa/{id}', [MahasiswaController::class, 'destroy'])->name('destroy');
+
+ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+
 });
