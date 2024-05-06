@@ -13,7 +13,7 @@ QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="a
     <div class="container mt-5">
         <div class="d-flex justify-content-between">
             <h1>Data Mahasiswa</h1>
-            <<form action="{{ route('logout') }}" method="POST">
+            <form action="{{ route('logout') }}" method="POST">
                 @csrf
                 <button class="btn btn-primary" type=”submit”>Logout</button>
                 </form>
